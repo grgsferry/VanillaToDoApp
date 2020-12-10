@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vanilla To-Do List</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="input-container">
+        <input id=todoinput type="text" placeholder="What do you want to do?"></input>
+        <button id="submitbutton">Submit</button>
+        <button id="clearallbutton">Clear List</button>
+    </div>
+    <div id="table-container">
+        <table id="table">
+            <tr>
+                <th>To-Do List</th>
+                <th>Status</th>
+            </tr>
+        </table>
+        <button class="tablebutton" id="deletebutton">x</button>
+        <button class="tablebutton" id="moveupbutton">&uarr;</button>
+        <button class="tablebutton" id="movedownbutton">&darr;</button>
+    </div>    
+    <script src="./app.js"></script>
+</body>
+</html>
+

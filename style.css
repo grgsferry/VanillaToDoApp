@@ -1,0 +1,7 @@
+table, .tablebutton {
+    display: none;
+}
+
+.selected {
+    background-color: red;
+}
