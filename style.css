@@ -1,7 +1,86 @@
-table, .tablebutton {
-    display: none;
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 40px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+#todoinput {
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 50px;
+    border-style: none;
+    text-align: center;
+    width: 1000px;
+}
+
+.greenbutton {
+    margin: auto 5px;
+    padding: 10px;
+    font-size: 20px;
+    border-style: none;
+    background-color: #00b33c;
+    color: white;
 }
 
 .selected {
-    background-color: red;
+    background-color: #a1a1a1;
+    color: white;
+    font-weight: bold;
+}
+
+#submitbutton, 
+#clearallbutton {
+    width: 150px;
+}
+
+#deletebutton, 
+#moveupbutton, 
+#movedownbutton {
+    width: 45px;
+    /* display: none; */
+}
+
+#submitbutton:hover, 
+#clearallbutton:hover, 
+#deletebutton:hover, 
+#moveupbutton:hover, 
+#movedownbutton:hover {
+    background-color: #007928;
+    cursor: pointer;
+}
+
+table {
+    /* display: none; */
+    border-collapse: collapse;
+    margin: 70px auto 10px;
+    font-size: 15px;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+table thead tr {
+    background-color: #696969;
+    color: #ffffff;
+    font-weight: bold;
+    text-align: left;
+}
+
+table th, table td {
+    padding: 12px 15px
+}
+
+table tbody tr {
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+}
+
+table tbody tr:last-of-type {
+    border-bottom: 2px solid #696969
 }

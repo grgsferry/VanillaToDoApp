@@ -3,26 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vanilla To-Do List</title>
+    <title>Vanilla To-Do App</title>
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="input-container">
-        <input id=todoinput type="text" placeholder="What do you want to do?"></input>
-        <button id="submitbutton">Submit</button>
-        <button id="clearallbutton">Clear List</button>
+    <div>
+        <input id=todoinput type="text" placeholder="Type here to start! What do you wanna do?"></input>
+        <div>
+            <button class="greenbutton" id="submitbutton">Submit</button>
+            <button class="greenbutton" id="clearallbutton">Clear List</button>
+        </div>
     </div>
-    <div id="table-container">
+    <div>
         <table id="table">
-            <tr>
-                <th>To-Do List</th>
-                <th>Status</th>
-            </tr>
+            <thead>
+                <tr>
+                    <th>To-Do List</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
         </table>
-        <button class="tablebutton" id="deletebutton">x</button>
-        <button class="tablebutton" id="moveupbutton">&uarr;</button>
-        <button class="tablebutton" id="movedownbutton">&darr;</button>
+        <div>
+            <button class="greenbutton" id="deletebutton">x</button>
+            <button class="greenbutton" id="moveupbutton">&uarr;</button>
+            <button class="greenbutton" id="movedownbutton">&darr;</button>
+        </div>
     </div>    
     <script src="./app.js"></script>
 </body>
